@@ -15,12 +15,12 @@ font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neu
 body{margin:0;background:linear-gradient(180deg,#071029 0%, #071b2e 100%);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
 .wrap{width:980px;max-width:96%;}
 header{display:flex;gap:20px;align-items:center;margin-bottom:18px}
-.logo{width:84px;height:84px;border-radius:22px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:white;box-shadow:0 8px 30px rgba(12,18,30,0.6)}
+.logo{width:84px;height:84px;border-radius:22px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:white;box-shadow:0 8px 30px rgba(12,18,30,0.6);transition:transform .2s}
 .headtext h1{margin:0;font-size:28px;letter-spacing:0.4px}
 .headtext p{margin:4px 0 0;color:var(--muted);font-size:13px}
 
 
-.card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.6);}
+.card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.6);} 
 .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
 .tag{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
 
@@ -28,7 +28,7 @@ header{display:flex;gap:20px;align-items:center;margin-bottom:18px}
 h2{margin-top:0}
 p.lead{color:#d6e4ff}
 .meme{margin:16px 0;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:10px}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600;border:none;cursor:pointer}
 
 
 footer{margin-top:18px;color:var(--muted);font-size:13px}
@@ -73,3 +73,22 @@ footer{margin-top:18px;color:var(--muted);font-size:13px}
 <section>
 <h3>Τσάκα — λίγο JavaScript (αρκεί για εντύπωση)</h3>
 <p>Πάτα το κουμπί για ένα μικρό εφέ (στυλ «έκπληξη»):</p>
+<button class="btn" id="surprise">Πατήστε με!</button>
+</section>
+
+<footer>© Βλαδίμηρος — επίδειξη για μάθημα HTML</footer>
+</main>
+</div>
+
+<script>
+/* μικρό εφέ: χτυπάει το λογότυπο και εμφανίζει μήνυμα */
+document.getElementById('surprise').addEventListener('click', function(){
+  const logo = document.querySelector('.logo');
+  logo.style.transform = 'scale(1.14) rotate(-6deg)';
+  setTimeout(()=> logo.style.transform = '', 450);
+  // μικρό popup (ή αντικατέστησε με fancier animation)
+  alert('Έκπληξη! 🎉 Η σελίδα λειτουργεί online.');
+});
+</script>
+</body>
+</html>
