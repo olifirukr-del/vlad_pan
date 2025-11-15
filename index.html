@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Βλαδίμηρος Μπαλανιώκ — Η Επίδειξη</title>
+<meta name="description" content="Η (αστεία) προσωπική σελίδα του Βλαδίμηρου — για να κάνεις εντύπωση στη δασκάλα χωρίς προσωπικά στοιχεία.">
+<style>
+:root{
+--bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03);
+--radius:14px;
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#071029 0%, #071b2e 100%);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+.wrap{width:980px;max-width:96%;}
+header{display:flex;gap:20px;align-items:center;margin-bottom:18px}
+.logo{width:84px;height:84px;border-radius:22px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:white;box-shadow:0 8px 30px rgba(12,18,30,0.6)}
+.headtext h1{margin:0;font-size:28px;letter-spacing:0.4px}
+.headtext p{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+
+.card{background:var(--card);padding:22px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.6);}
+.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.tag{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px}
+
+
+h2{margin-top:0}
+p.lead{color:#d6e4ff}
+.meme{margin:16px 0;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600}
+
+
+footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+
+/* small responsive */
+@media (max-width:520px){.headtext h1{font-size:20px}.logo{width:64px;height:64px;font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">Β</div>
+<div class="headtext">
+<h1>Βλαδίμηρος Μπαλανιώκ</h1>
+<p>Η επίδειξη — μια αστεία, ασφαλής σελίδα για το μάθημα του HTML</p>
+</div>
+</header>
+
+
+<main class="card">
+<div class="meta">
+<span class="tag">Τάξη: Β' Πληροφορικής (οι μελλοντικοί hackers)</span>
+<span class="tag">Σχολείο: το ένδοξο 6ο ΕΠΑΛ κάπου στους Αμπελόκηπους</span>
+<span class="tag">Καθηγήτρια: Κ. Ι-κουλου</span>
+</div>
+
+
+<section style="margin-top:14px">
+<h2>Γιατί αυτή η σελίδα;</h2>
+<p class="lead">Για να δείξεις στη δασκάλα σου (με χιούμορ) τι έμαθες στο μάθημα, χωρίς να εκθέσεις προσωπικά στοιχεία. Η σελίδα είναι δημόσια αλλά δεν αναφέρει πραγματικά ονόματα — τα "κρυπτογραφήσαμε" έτσι ώστε να είναι ασφαλές.</p>
+</section>
+
+
+<section class="meme">
+<h3>Ιδιόμορφο μήνυμα προς την Κ. Ι-κουλου</h3>
+<p>Αγαπητή <strong>Κ. Ι-κουλου</strong>,<br>
+Σε ενημερώνουμε ευγενικά/τρολαριστά ότι οι μαθητές της Β' Πληροφορικής έχουν πλέον HTML-δυνάμεις. Μην ανησυχείτε — θα τις χρησιμοποιήσουμε για καλό (και λίγο για πλάκα 🎉).</p>
+</section>
+
+
+<section>
+<h3>Τσάκα — λίγο JavaScript (αρκεί για εντύπωση)</h3>
+<p>Πάτα το κουμπί για ένα μικρό εφέ (στυλ «έκπληξη»):</p>
